@@ -74,7 +74,7 @@ export function buildGrass(scene) {
     mesh.setMatrixAt(placed++, dummy.matrix);
   }
   mesh.instanceMatrix.needsUpdate = true;
-  mesh.castShadow    = true;
+  mesh.castShadow    = false;
   mesh.receiveShadow = true;
   scene.add(mesh);
 }

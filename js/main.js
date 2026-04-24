@@ -56,7 +56,7 @@ function animate() {
   animateShip(elapsed);
   animateSkullParticles(elapsed, skullRef);
 
-  if (frame % 2 === 0) {
+  if (frame % 3 === 0) {
     for (const lod of lodObjects) {
       try { lod.update(camera); } catch(e) {}
     }

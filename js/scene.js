@@ -10,7 +10,7 @@ import { getHeight } from './terrain.js';
 
 export function initRenderer() {
   const r = new THREE.WebGLRenderer({ antialias: true });
-  r.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  r.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
   r.setSize(window.innerWidth, window.innerHeight);
   r.shadowMap.enabled   = true;
   r.shadowMap.type      = THREE.PCFSoftShadowMap;
@@ -61,7 +61,7 @@ export function initLights(scene) {
   sun.position.set(SUN_DIR.x * 500, SUN_DIR.y * 500, SUN_DIR.z * 500);
   sun.target.position.set(0, 0, 0);
   sun.castShadow = true;
-  sun.shadow.mapSize.set(2048, 2048);
+  sun.shadow.mapSize.set(1024, 1024);
   sun.shadow.camera.left   = sun.shadow.camera.bottom = -280;
   sun.shadow.camera.right  = sun.shadow.camera.top    =  280;
   sun.shadow.camera.near   = 1;
@@ -85,7 +85,7 @@ export function initLights(scene) {
   fireSpt.position.set(FIRE_X, fireY + 14, FIRE_Z);
   fireSpt.target.position.set(FIRE_X, fireY, FIRE_Z);
   fireSpt.castShadow = true;
-  fireSpt.shadow.mapSize.set(1024, 1024);
+  fireSpt.shadow.mapSize.set(512, 512);
   fireSpt.shadow.bias = -0.001;
   scene.add(fireSpt);
   scene.add(fireSpt.target);
