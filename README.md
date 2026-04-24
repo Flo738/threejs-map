@@ -2,7 +2,7 @@
 
 ## Lancer le projet (prof)
 
-1. Cloner le repo :
+1. Vous devez clonez le repo
 
 ```bash
 git clone https://github.com/Flo738/threejs-map.git
