@@ -1,10 +1,27 @@
 # Laugh Tale — Three.js
 
-## Lancer le projet
+## Lancer le projet (prof)
+
+1. Cloner le repo :
 
 ```bash
-cd "TP threejs"
+git clone https://github.com/Flo738/threejs-map.git
+```
+
+2. Entrer dans le dossier cloné :
+
+```bash
+cd threejs-map
+```
+
+3. Lancer un serveur local :
+
+```bash
 python3 -m http.server 8080
 ```
 
-Ouvrir **http://localhost:8080** dans Chrome ou Firefox.
+4. Ouvrir dans le navigateur :
+
+```text
+http://localhost:8080
+```
